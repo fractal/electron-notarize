@@ -1,10 +1,13 @@
-Electron Notarize
+Fractal Electron Notarize
 -----------
 
-> Notarize your Electron apps seamlessly for macOS
+This is a package enables you to notarize your Electron macOS application. Forked from [electron/electron-notarize](https://github.com/electron/electron-notarize).
 
-[![CircleCI status](https://circleci.com/gh/electron/electron-notarize.svg?style=svg)](https://circleci.com/gh/electron/electron-notarize)
-[![NPM package](https://img.shields.io/npm/v/electron-notarize)](https://npm.im/electron-notarize)
+### Reason for Fork
+
+We fixed a few bugs which notably prevented notarizing a macOS app with external binaries of the same name as the application itself included in the app bundle. This package is left here for those who find use from it, but will probably not be maintained.
+
+> Notarize your Electron apps seamlessly for macOS
 
 ## Installation
 
@@ -18,7 +21,7 @@ yarn add electron-notarize --dev
 
 ## What is app "notarization"?
 
-From Apple's docs in XCode:
+From Apple's docs in Xcode:
 
 > A notarized app is a macOS app that was uploaded to Apple for processing before it was distributed. When you export a notarized app from Xcode, it code signs the app with a Developer ID certificate and staples a ticket from Apple to the app. The ticket confirms that you previously uploaded the app to Apple.
 
@@ -71,7 +74,7 @@ For notarization, you need the following things:
 1. Never hard code your password into your packaging scripts, use an environment
 variable at a minimum.
 2. It is possible to provide a keychain reference instead of your actual password (assuming that you have already logged into
-the Application Loader from Xcode).  For example:
+the Application Loader from Xcode). For example:
 
 ```javascript
 const password = `@keychain:"Application Loader: ${appleId}"`;
