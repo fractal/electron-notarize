@@ -1,6 +1,6 @@
 {
   "name": "electron-notarize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Notarize your Electron app",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -15,9 +15,8 @@
     "url": "https://github.com/electron/electron-notarize/issues"
   },
   "scripts": {
-    "build": "tsc",
     "lint": "prettier --check \"src/**/*.ts\"",
-    "prepare": "yarn build",
+    "prepare": "tsc",
     "test": "jest"
   },
   "files": [
