@@ -4,26 +4,26 @@
   "description": "Notarize your Electron app",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "author": "Samuel Attard",
+  "author": "Samuel Attard, Fractal",
   "license": "MIT",
-  "homepage": "https://github.com/electron/electron-notarize#readme",
+  "homepage": "https://github.com/fractal/electron-notarize#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/electron/electron-notarize.git"
-  },
-  "bugs": {
-    "url": "https://github.com/electron/electron-notarize/issues"
+    "url": "https://github.com/fractal/electron-notarize.git"
   },
   "scripts": {
+    "build": "tsc",
     "lint": "prettier --check \"src/**/*.ts\"",
-    "prepare": "tsc",
+    "prepare": "yarn build",
     "test": "jest"
   },
   "files": [
     "lib"
   ],
   "engines": {
-    "node": ">= 10.0.0"
+    "node": ">=15.x",
+    "npm": "use-yarn",
+    "yarn": ">=1.19.x"
   },
   "devDependencies": {
     "@types/debug": "^4.1.5",
