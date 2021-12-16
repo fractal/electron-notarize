@@ -1,4 +1,4 @@
-Fractal Electron Notarize
+Whist Electron Notarize
 -----------
 
 This is a package enables you to notarize your Electron macOS application. Forked from [electron/electron-notarize](https://github.com/electron/electron-notarize).
