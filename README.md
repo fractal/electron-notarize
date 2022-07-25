@@ -5,7 +5,7 @@ This is a package enables you to notarize your Electron macOS application. Forke
 
 ### Reason for Fork
 
-We fixed a few bugs which notably prevented notarizing a macOS app with external binaries of the same name as the application itself included in the app bundle. This package is left here for those who find use from it, but will probably not be maintained.
+We fixed a few bugs which notably prevented notarizing a macOS app with external binaries of the same name as the application itself included in the app bundle. This project was archived and will not be maintained as Whist no longer uses Electron.
 
 > Notarize your Electron apps seamlessly for macOS
 
